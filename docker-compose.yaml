@@ -1,0 +1,8 @@
+services:
+  spark:
+    image: quay.io/jupyter/pyspark-notebook
+    ports:
+      - "8888:8888"
+      - "4050:4050"
+    volumes:
+      - ./shared:/home/jovyan/shared
